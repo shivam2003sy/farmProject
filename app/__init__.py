@@ -17,7 +17,7 @@ UPLOAD_FOLDER = 'app/static/path/to/the/uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:8080"}})
+CORS(app, resources={r"/*": {"origins": "https://farm-to-dine.vercel.app"}})
 app.config.from_object('app.config.Config')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
